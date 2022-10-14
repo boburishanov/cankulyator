@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgb(47, 219, 219), rgb(51, 226, 51));
+}
+.container .box{
+    width: 400px;
+    height: 70%;
+    border: 1px solid #000;
+    background-color: transparent;
+}
+.container .box .stiv{
+    width: 100%;
+    height: 20%;
+    border: 1px solid #000;
+    
+}
+.container .box .stiv .demo{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    
+}
+.container .box .btn{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+}
+.container .box .btn div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;
+
+}
+.container .box .btn div:active{
+    box-shadow: inset 0 0 10px black;
+}
+.container .box .btn .btnas{
+    grid-column: 1/3;
+}
+.container .box .btn .clear{
+    grid-column: 3/5;
+}
+.container .box .btn div{
+    border: 1px solid #000;
+    
+}
